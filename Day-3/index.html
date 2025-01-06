@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      input:valid,
+      textarea:valid {
+        background-color: greenyellow;
+      }
+
+      input:invalid,
+      textarea:invalid {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Login Form</legend>
+        <label>Name</label> <br />
+        <input required value="abc@123" disabled /> <br />
+        <label>Email</label> <br />
+        <input required value="abc@gmail.com" readonly /> <br />
+        <label>Password</label> <br />
+        <input required/> <br />
+        <input type="submit" /> <br />
+      </fieldset>
+    </form>
+    <input /><br />
+    <input size="40" />
+    <input minlength="3" maxlength="6" />
+    <textarea minlength="3" maxlength="6"></textarea>
+    <input type="number" min="7" max="10" />
+    <input autofocus type="text" pattern="\w{3,6}" />
+    <input autofocus type="password" pattern="\d{4,4}" />
+    <input autofocus placeholder="abc@gmail.com" />
+    <span title="Hi">Hi</span>
+    <span title="Hello Everyopne, awadaw, awd">Hello</span>
+  </body>
+</html>
