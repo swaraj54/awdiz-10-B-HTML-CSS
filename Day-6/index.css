@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.paddingStyles {
+  border: 2px solid red;
+  margin: 10px;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-bottom: 30px;
+  padding-right: 20px;
+  text-align: right;
+  padding: 50px;
+  padding: 100px 50px;
+  padding: 50px 100px 150px 200px;
+}
+
+.outlineStyles {
+  border: 8px solid black;
+  outline: 10px solid red;
+  padding: 200px;
+  margin: 100px;
+  font-size: 32px;
+  outline-offset: 30px;
+}
+
+.lastLineStyles {
+  text-align-last: right;
+  text-align-last: justify;
+  text-align-last: center;
+}
+
+.textDecorationStyles {
+  /* text-align: justify; */
+  /* text-decoration-line: line-through;
+  text-decoration-line: overline;
+  text-decoration-line: underline;
+  text-decoration-color: red;
+  text-decoration-thickness: 1px;
+  text-decoration-style: dashed;
+  text-transform: uppercase;
+  text-transform: lowercase;
+  text-transform: capitalize;
+  text-transform: none;
+  text-indent: 200px;
+  letter-spacing: 2px;
+  line-height: 10px; */
+  word-spacing: 50px;
+  /* white-space: nowrap; */
+  text-shadow: 10px 10px;
+  font-style: italic;
+  font-weight: bolder;
+  font-variant: small-caps;
+}
