@@ -1,0 +1,59 @@
+#parentContainer {
+  font-size: 52px;
+  text-align: center;
+  border: 2px solid red;
+  width: 100%;
+  display: flex; /* use for to set position of elements */
+  flex-direction: row; /* use for to set direction of elements */
+  flex-direction: row-reverse;
+  flex-direction: column;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  justify-content: space-around;
+  justify-content: space-evenly;
+
+  justify-content: center;
+  /* use it to set extra horizontal space inbetweem elements  */
+}
+
+#verticalSpaceHandingStyles {
+  display: flex;
+  border: 2px solid red;
+  font-size: 54px;
+  height: 400px;
+  align-items:center;
+  align-items:baseline;
+  
+  justify-content: center;
+}
+#verticalSpaceHandingStyles > div {
+  height: 200px;
+  border: 2px solid black;
+  width: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+#verticalSpaceHandingStyles > div > p {
+  /* border: 2px solid red; */
+}
+
+#parentContainer > div {
+  width: 31%;
+  height: 300px;
+  border: 2px solid black;
+}
+
+#flexWrapStyles {
+  border: 2px solid red;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+#flexWrapStyles > div {
+  border: 5px solid black;
+  width: 30%;
+  height: 120px;
+  margin-bottom: 20px;
+}
