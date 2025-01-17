@@ -11,3 +11,15 @@
   font-size: 42px;
   text-align: center;
 }
+
+
+Align-items -> aligns items vertically within container 
+-center -> align items in middle
+-flex-start -> top side 
+-flex-end  -> bottom side 
+align-content -> align rows -> multiple rows 
+-center -> align rows in center 
+-stretch -> rows strecth space to fill it
+-space-between ->    
+justify-conent 
+justify-items
