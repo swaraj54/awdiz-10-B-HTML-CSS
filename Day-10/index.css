@@ -2,12 +2,14 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica, Arial, sans-serif;
 }
 
 #screen {
   width: 100%;
   height: 500px;
-  border: 5px solid red;
+  /* border: 5px solid red; */
 }
 
 #navbar {
@@ -30,25 +32,132 @@
 }
 
 #navigations {
-  flex-grow: 6;
+  flex-grow: 4;
   height: 100%;
   /* width: 20%; */
-  border: 2px solid black;
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
+
+#navigations > div > p {
+  font-size: 14px;
+  font-weight: bold;
+}
+
 #search {
-  flex-grow: 6;
+  flex-grow: 8;
   height: 100%;
   /* width: 20%; */
-  border: 2px solid black;
+  /* border: 2px solid black; */
+  display: flex;
+  align-items: center;
 }
+#search > div {
+  width: 90%;
+  margin: auto;
+  height: 50%;
+  background-color: rgb(236, 236, 236);
+  display: flex;
+  border-radius: 4px;
+  align-items: center;
+}
+#search > div > span {
+  margin: 0px 10px;
+}
+
+#search > div > input {
+  width: 80%;
+  border: none;
+  outline: none;
+  background-color: rgb(236, 236, 236);
+}
+
 #profile {
   flex-grow: 2;
   height: 100%;
   /* width: 20%; */
-  border: 2px solid black;
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
+
+#profile > div {
+  text-align: center;
+}
+
+#profile > div > p {
+  font-size: 12px;
+  font-weight: bold;
+}
+
 .imgStyle {
-  width: 40%;
-  margin: auto;
+  width: 60%;
+  margin-left: 10%;
   height: 60%;
+}
+
+#profile > div:first-child {
+  display: none;
+}
+#icon > img:first-child {
+  display: none;
+}
+
+#overviewTitle {
+  display: none;
+}
+
+@media (max-width: 450px) {
+  #navbar {
+    height: 60px;
+  }
+  #navigations {
+    display: none;
+  }
+  #search {
+    display: none;
+  }
+
+  #profile > div:first-child {
+    display: block;
+  }
+  #profile > div:nth-child(2) {
+    display: none;
+  }
+
+  #profile > div > img {
+    color: black;
+  }
+
+  #profile > div > p {
+    display: none;
+  }
+
+  #icon {
+    flex-grow: 1;
+  }
+  #profile {
+    flex-grow: 1;
+  }
+
+  #icon > img:first-child {
+    display: block;
+  }
+
+  .imgStyle {
+    width: 44%;
+    margin-left: 20%;
+    height: 38%;
+  }
+  #overviewTitle {
+    flex-grow: 4;
+    display: block;
+  }
+  #overviewTitle > p:last-child {
+    font-size: 10px;
+    color: gray;
+  }
 }
